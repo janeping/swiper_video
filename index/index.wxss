@@ -1,0 +1,25 @@
+/* 轮播图 */
+.box {
+  width: 100%;
+  height: 450rpx;
+  line-height: 40rpx;
+}
+
+.detail-banner {
+  width: 100%;
+  /* height: 700rpx; */
+  height: 450rpx;
+  padding: 0 0 20rpx 0;
+  background-color: black
+}
+
+.detail-banner-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* video */
+.box-w {
+  width: 100%;
+  height: 450rpx;
+}

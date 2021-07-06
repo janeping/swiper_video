@@ -1,0 +1,10 @@
+<view class="box">
+<swiper class="detail-banner" indicator-dots="{{true}}" autoplay="{{swiperAutoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{true}}" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}" style="background: white;" current="{{current}}" bindchange="swiperChange"> 
+  <swiper-item wx:for="{{proKVlist}}" wx:key="kvIndex"> 
+    <view wx:if="{{item.kvType==2}}"> 
+      <video class='box-w block' id="video{{index}}" src="{{item.kvImg}}" show-center-play-btn="{{true}}" autoplay='{{videoAutoplay}}' objectFit="cover" bindended="videoEnd" controls="{{controls}}" enable-progress-gesture="{{false}}" bindplay="handlePlay" bindended="videoPlayend" data-id="video{{index}}"></video>
+    </view>
+    <image mode="aspectFill" class="detail-banner-img" src="{{item.kvImg}}" bindtap="previewImage" data-src="{{item.kvImg}}" wx:else></image>
+  </swiper-item>
+</swiper>
+</view>
